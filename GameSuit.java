@@ -6,12 +6,10 @@ class SuitGame {
     String[] pilihan = {"batu", "gunting", "kertas"};
     Random random = new Random();
 
-    // Method untuk komputer memilih
     String pilihanKomputer() {
         return pilihan[random.nextInt(pilihan.length)];
     }
 
-    // Method untuk menentukan pemenang
     String tentukanPemenang(String pemain, String komputer) {
         if (pemain.equals(komputer)) {
             return "Seri!";
@@ -49,3 +47,4 @@ public class GameSuit {
         System.out.println(game.tentukanPemenang(pilihanPemain, pilihanKomputer));
     }
 }
+
